@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-  <div id="example">
+  <div id="root">
 
   </div>
 @endsection
