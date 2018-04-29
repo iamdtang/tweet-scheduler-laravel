@@ -1,7 +1,9 @@
 @extends('layout')
 
 @section('content')
-  <div id="root">
+  <div id="root"></div>
+@endsection
 
-  </div>
+@section('scripts')
+  <script src="/js/app.js"></script>
 @endsection

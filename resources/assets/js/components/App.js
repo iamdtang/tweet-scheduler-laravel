@@ -49,34 +49,26 @@ export default class App extends Component {
     });
 
     return (
-      <div>
-        <header className="bg-grey-darkest text-white">
-          <h1 className="p-4">Tweet Scheduler</h1>
-        </header>
-        <main className="p-4">
-          <button type="button">
-            Sign in with Twitter
-          </button>
-          <form onSubmit={this.schedule}>
-            {tweetRows}
-            <div>
-              <button type="button" className="text-orange underline" onClick={this.addTweet}>
-                Add another tweet
-              </button>
-            </div>
-            <div className="mt-4 mb-4">
-              <label htmlFor="interval" className="block mb-3">Interval (minutes)</label>
-              <input
-                type="number"
-                id="interval"
-                className="block appearance-none border w-full py-2 px-3 text-grey-darker"
-                value={this.state.interval}
-                onChange={this.updateInterval} />
-            </div>
-            <button type="submit" className="btn btn-blue">Schedule</button>
-          </form>
-        </main>
-      </div>
+      <main className="p-4">
+        <form onSubmit={this.schedule}>
+          {tweetRows}
+          <div>
+            <button type="button" className="text-orange underline" onClick={this.addTweet}>
+              Add another tweet
+            </button>
+          </div>
+          <div className="mt-4 mb-4">
+            <label htmlFor="interval" className="block mb-3">Interval (minutes)</label>
+            <input
+              type="number"
+              id="interval"
+              className="block appearance-none border w-full py-2 px-3 text-grey-darker"
+              value={this.state.interval}
+              onChange={this.updateInterval} />
+          </div>
+          <button type="submit" className="btn btn-blue">Schedule</button>
+        </form>
+      </main>
     );
   }
 }

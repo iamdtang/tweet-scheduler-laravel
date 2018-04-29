@@ -19093,58 +19093,40 @@ var App = function (_Component) {
       });
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        null,
+        'main',
+        { className: 'p-4' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'header',
-          { className: 'bg-grey-darkest text-white' },
+          'form',
+          { onSubmit: this.schedule },
+          tweetRows,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'h1',
-            { className: 'p-4' },
-            'Tweet Scheduler'
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'main',
-          { className: 'p-4' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'button',
-            { type: 'button' },
-            'Sign in with Twitter'
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'form',
-            { onSubmit: this.schedule },
-            tweetRows,
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'button',
-                { type: 'button', className: 'text-orange underline', onClick: this.addTweet },
-                'Add another tweet'
-              )
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'div',
-              { className: 'mt-4 mb-4' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'label',
-                { htmlFor: 'interval', className: 'block mb-3' },
-                'Interval (minutes)'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
-                type: 'number',
-                id: 'interval',
-                className: 'block appearance-none border w-full py-2 px-3 text-grey-darker',
-                value: this.state.interval,
-                onChange: this.updateInterval })
-            ),
+            'div',
+            null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'button',
-              { type: 'submit', className: 'btn btn-blue' },
-              'Schedule'
+              { type: 'button', className: 'text-orange underline', onClick: this.addTweet },
+              'Add another tweet'
             )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'mt-4 mb-4' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'label',
+              { htmlFor: 'interval', className: 'block mb-3' },
+              'Interval (minutes)'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+              type: 'number',
+              id: 'interval',
+              className: 'block appearance-none border w-full py-2 px-3 text-grey-darker',
+              value: this.state.interval,
+              onChange: this.updateInterval })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'button',
+            { type: 'submit', className: 'btn btn-blue' },
+            'Schedule'
           )
         )
       );

@@ -6,8 +6,23 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    @yield('content')
+    <div>
+      <header class="bg-grey-darkest text-white">
+        <h1 class="p-4">Tweet Scheduler</h1>
+        <nav>
+          <ul>
+            @if (session('twitter-user'))
+              <li>
+                <a href="/logout">Logout</a>
+              </li>
+            @endif
+          </ul>
+        </nav>
+      </header>
 
-    <script src="/js/app.js"></script>
+      @yield('content')
+    </div>
+
+    @yield('scripts')
   </body>
 </html>
