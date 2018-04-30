@@ -7,10 +7,10 @@
   </head>
   <body>
     <div>
-      <header class="bg-grey-darkest text-white">
-        <h1 class="p-4 inline-block">Tweet Scheduler</h1>
-        <nav class="inline-block">
-          <ul class="list-reset flex">
+      <header class="flex bg-grey-darkest text-white">
+        <h1 class="p-4 w-1/2">Tweet Scheduler</h1>
+        <nav class="w-1/2 p-4">
+          <ul class="list-reset text-right">
             @if (session('twitter-user'))
               <li>
                 <a href="/logout" class="text-orange no-underline">Logout</a>
