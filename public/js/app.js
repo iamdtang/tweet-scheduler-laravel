@@ -19104,7 +19104,7 @@ var App = function (_Component) {
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'button',
-              { type: 'button', className: 'text-orange underline', onClick: this.addTweet },
+              { type: 'button', className: 'text-orange', onClick: this.addTweet },
               'Add another tweet'
             )
           ),

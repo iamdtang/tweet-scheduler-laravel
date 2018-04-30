@@ -8,12 +8,12 @@
   <body>
     <div>
       <header class="bg-grey-darkest text-white">
-        <h1 class="p-4">Tweet Scheduler</h1>
-        <nav>
-          <ul>
+        <h1 class="p-4 inline-block">Tweet Scheduler</h1>
+        <nav class="inline-block">
+          <ul class="list-reset flex">
             @if (session('twitter-user'))
               <li>
-                <a href="/logout">Logout</a>
+                <a href="/logout" class="text-orange no-underline">Logout</a>
               </li>
             @endif
           </ul>

@@ -53,7 +53,7 @@ export default class App extends Component {
         <form onSubmit={this.schedule}>
           {tweetRows}
           <div>
-            <button type="button" className="text-orange underline" onClick={this.addTweet}>
+            <button type="button" className="text-orange" onClick={this.addTweet}>
               Add another tweet
             </button>
           </div>
